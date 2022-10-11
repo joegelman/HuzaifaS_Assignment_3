@@ -37,47 +37,29 @@ var student = {
 let objectLength = Object.entries(student).length;
 console.log(objectLength);
 
-// Task 4 [INCOMPLETE] - Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.
+// Task 4 - Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.
 
-// var library = [ 
-//     {
-//         author: 'Bill Gates',
-//         title: 'The Road Ahead',
-//         readingStatus: true
-//     },
-//     {
-//         author: 'Steve Jobs',
-//         title: 'Walter Isaacson',
-//         readingStatus: true
-//     },
-//     {
-//         author: 'Suzanne Collins',
-//         title:  'Mockingjay: The Final Book of The Hunger Games', 
-//         readingStatus: false
-//     }]; 
+var library = [
+    {
+        title: 'Bill Gates',
+        author: 'The Road Ahead',
+        readingStatus: true
+    },
+    {
+        title: 'Steve Jobs',
+        author: 'Walter Isaacson',
+        readingStatus: true
+    },
+    {
+        title: 'Mockingjay: The Final Book of The Hunger Games',
+        author: 'Suzanne Collins',
+        readingStatus: false
+    }];
 
-
-
-// const readingStatus = rS
-
-// console.log(library.rS);console.log();
-
-
-// const isRead = library.map((item) => {
-//     return item.readingStatus;
-// });
-
-// isRead.map((item) => {
-//     console.log((isRead = true ? 'have' : 'have not'));
-// });
-
-// library.forEach(libraryItem);
-
-// function libraryItem(item, index, arr) {
-
-// console.log(`I ${isRead[index]} read ${library[index].title} by ${library[index].author}.`)};
-
-// END INCOMPLETE ATTEMPT
+for (var i = 0; i < library.length; i++) {
+    var book = `${library[i].title} by ${library[i].author}`;
+    console.log(library[i].readingStatus === true ? `Already read ${book}` : `You still need to read ${book}`);
+    }
 
 // Task 5 - Write a JavaScript program to get the volume of a Cylinder with four decimal places using object classes.  
 //// Volume of a cylinder : V = πr2h
