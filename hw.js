@@ -56,10 +56,12 @@ var library = [
         readingStatus: false
     }];
 
-for (var i = 0; i < library.length; i++) {
+
+
+    library.forEach((e, i) => {
     var book = `${library[i].title} by ${library[i].author}`;
     console.log(library[i].readingStatus === true ? `Already read ${book}` : `You still need to read ${book}`);
-    }
+    });
 
 // Task 5 - Write a JavaScript program to get the volume of a Cylinder with four decimal places using object classes.  
 //// Volume of a cylinder : V = πr2h
