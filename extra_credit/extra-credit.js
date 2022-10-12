@@ -12,7 +12,7 @@ function factorial(num){
     }
 }
 
-console.log(factorial(5)); // 120
+console.log(factorial(4)); // 120
 
 // Task 1 - Write a script including statements for variable declaration and assignment that will calculate and print the sum of the integers from 1 to 10. Use the while statement to loop through the calculation and increment statements
 
