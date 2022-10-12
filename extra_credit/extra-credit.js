@@ -76,7 +76,7 @@ let newP = document.createElement('p')
 
 let int = 5
 
-while (int <= 27){
+while (int <= 25){
     if ((int % 5) === 0){
         document.body.innerHTML += `<p>${int}, ${(int + 1)}, ${(int + 2)}, ${(int + 3)}, ${(int + 4)}</p>`
     }  
@@ -87,7 +87,7 @@ while (int <= 27){
 
 let iterator = 5
 
-for (iterator; iterator <= 30; iterator++) {
+for (iterator; iterator <= 25; iterator++) {
     if ((iterator % 5) === 0){
         document.body.innerHTML += `<p>${iterator}, ${(iterator + 1)}, ${(iterator + 2)}, ${(iterator + 3)}, ${(iterator + 4)}</p>`
     } 
@@ -117,3 +117,27 @@ while (no <= 100){
         document.write(`${no} FIZZBUZZ </br>`)
     no++
 };
+
+// Task 8 - Given a string of characters as input, write a function that returns it with the characters reversed.
+
+let str = "String Cheese"
+
+const stringArray = str.split("");
+
+const arrayReverse = stringArray.reverse();
+
+const arrayJoin = arrayReverse.join("");
+
+console.log(arrayJoin);
+
+// Task 9 - Research the difference between slice and splice
+
+/* 
+
+SLICE - a COPYING(but only shallow copying) array method that allows you to take a chunk out of an existing array, by specifying a "start" and/or "end" index for the new, derivative array. If you slice something that isn't there, it will return empty (i.e. "") slots
+
+
+SPLICE - a MUTATING array method that allows you to say "starting at this index, I want to delete this any items, and replace them with these items" - you can also pass through a negative number as "start" to work your way backwards in splicing, deleteCount is optional (it will default to the number of items you specify)
+
+
+*/
